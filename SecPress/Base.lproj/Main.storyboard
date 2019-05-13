@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,85 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SecPress" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iphone-wallpaper-quoi-de-mieux-quune-belle-plage-pour-recuperer-de-la-vitamine-d" translatesAutoresizingMaskIntoConstraints="NO" id="M9o-hl-ulw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Atlanta-Car-keys-1" translatesAutoresizingMaskIntoConstraints="NO" id="Pw1-iS-8tB">
+                                <rect key="frame" x="14.5" y="71" width="291" height="426"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LogowITHnAME" translatesAutoresizingMaskIntoConstraints="NO" id="gYO-Cl-lyZ">
+                                <rect key="frame" x="77.5" y="130" width="165" height="98"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="98" id="3EY-YR-lCK"/>
+                                    <constraint firstAttribute="width" constant="165" id="JSm-nl-ziI"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="jjjj" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k6x-0I-Tj0">
+                                <rect key="frame" x="117" y="346" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="khaled" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u4K-oq-itx">
+                                <rect key="frame" x="56" y="280" width="97" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pw1-iS-8tB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1ej-j0-1Cx"/>
+                            <constraint firstItem="Pw1-iS-8tB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Ifa-DM-Izb"/>
+                            <constraint firstItem="M9o-hl-ulw" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Igf-ZJ-wO6"/>
+                            <constraint firstItem="Pw1-iS-8tB" firstAttribute="top" secondItem="gYO-Cl-lyZ" secondAttribute="bottom" constant="-157" id="Ldv-vL-0Xc"/>
+                            <constraint firstItem="M9o-hl-ulw" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="SJr-CB-2BJ"/>
+                            <constraint firstItem="gYO-Cl-lyZ" firstAttribute="centerX" secondItem="Pw1-iS-8tB" secondAttribute="centerX" id="g3N-dc-6UX"/>
+                            <constraint firstItem="M9o-hl-ulw" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="pMM-MQ-9L4"/>
+                            <constraint firstItem="M9o-hl-ulw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="u5G-w9-PPA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="133.125" y="133.09859154929578"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6yd-rR-8Ms">
+            <objects>
+                <viewController id="rDy-W7-HS0" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YTZ-9A-oGw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qli-Bj-Etg">
+                                <rect key="frame" x="90" y="169" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="PPx-8M-TV7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9lc-at-ol4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="757.5" y="135.21126760563379"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Atlanta-Car-keys-1" width="291" height="426"/>
+        <image name="LogowITHnAME" width="159" height="120"/>
+        <image name="iphone-wallpaper-quoi-de-mieux-quune-belle-plage-pour-recuperer-de-la-vitamine-d" width="375" height="667"/>
+    </resources>
 </document>
