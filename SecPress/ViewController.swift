@@ -15,6 +15,17 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //hey
         //mpiiii
+        let jsonUrlString = "http://127.0.0.1:8000/api/login?email=hffinewaaeeea@fdsfsdsdsfdd.com&password=secret69"
+        guard let url = URL(string:jsonUrlString) else
+        {return}
+        
+        URLSession.shared.dataTask(with: url) {(data,response,err) in
+            guard let data = data else{return}
+            let dataAsString = String(data: data, encoding: .utf8)
+            print("$$$$$$$")
+            print(dataAsString)
+            }.resume()
+        
     }
 
 
