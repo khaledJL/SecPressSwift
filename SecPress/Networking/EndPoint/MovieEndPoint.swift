@@ -7,7 +7,7 @@
 //
 
 import Foundation
-enum NetworkEnvironment {
+/*enum NetworkEnvironment {
     case qa
     case production
     case staging
@@ -68,3 +68,4 @@ extension MovieApi: EndPointType {
         return nil
     }
 }
+*/

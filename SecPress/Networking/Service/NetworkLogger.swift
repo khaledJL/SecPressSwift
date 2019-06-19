@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class NetworkLogger {
+/*class NetworkLogger {
     static func log(request: URLRequest) {
         
         print("\n - - - - - - - - - - OUTGOING - - - - - - - - - - \n")
@@ -38,3 +38,4 @@ class NetworkLogger {
     
     static func log(response: URLResponse) {}
 }
+*/

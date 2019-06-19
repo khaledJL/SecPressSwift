@@ -15,6 +15,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         //hey
         //mpiiii
+        login()
+        
+    }
+    func login()
+    {
         let jsonUrlString = "http://127.0.0.1:8000/api/login?email=hffinewaaeeea@fdsfsdsdsfdd.com&password=secret69"
         guard let url = URL(string:jsonUrlString) else
         {return}
@@ -25,9 +30,6 @@ class ViewController: UIViewController {
             print("$$$$$$$")
             print(dataAsString)
             }.resume()
-        
     }
-
-
 }
 

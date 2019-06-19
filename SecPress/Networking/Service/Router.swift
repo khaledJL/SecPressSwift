@@ -9,7 +9,7 @@
 import Foundation
 
 
-class Router<EndPoint: EndPointType>: NetworkRouter {
+/*class Router<EndPoint: EndPointType>: NetworkRouter {
     private var task: URLSessionTask?
     
     func request(_ route: EndPoint, completion: @escaping NetworkRouterCompletion) {
@@ -87,3 +87,4 @@ class Router<EndPoint: EndPointType>: NetworkRouter {
     }
     
 }
+*/
