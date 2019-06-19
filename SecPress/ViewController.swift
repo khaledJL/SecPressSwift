@@ -10,16 +10,22 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view, typically from a nib.
         //hey
         //mpiiii
+
         login()
         
     }
     func login()
     {
+
+
+
         let jsonUrlString = "http://127.0.0.1:8000/api/login?email=hffinewaaeeea@fdsfsdsdsfdd.com&password=secret69"
         guard let url = URL(string:jsonUrlString) else
         {return}
@@ -32,4 +38,14 @@ class ViewController: UIViewController {
             }.resume()
     }
 }
-
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+    }
+    
+    @objc func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
